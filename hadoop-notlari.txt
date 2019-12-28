@@ -1,0 +1,10 @@
+hdfs dfs -mkdir /example
+hdfs dfs -copyFromLocal your_pc_path hdfs_path
+hdfs dfs -count hdfs_path
+hdfs dfs -cat hdfs_path
+hdfs dfs -cp hdfs_copy_path hdfs_new_path
+hdfs dfs -rmr hdfs_path
+hdfs dfs -mv hdfs_mv_path hdfs_new_path
+hdfs dfs -ls hdfs_path
+hdfs dfs -chmod access_code hdfs_path
+hdfs dfs -setrep replicationCount -R hdfs_path
