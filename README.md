@@ -1,0 +1,1 @@
+# sifirdan-her-yonuyle-big-data-egitimi
