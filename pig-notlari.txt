@@ -3,7 +3,7 @@ arithmetic_operators = [+, -, *, /, %, ?:]
 comparison_operators = [==, !=, <, >, <=, >=, matches]
 logical_operators = [or, and, not]
 null_operators = [is null, is not null]
-functions = [DUMP, DISTINCT, LOAD, FILTER]
+functions = [DUMP, DISTINCT, LOAD, FILTER, GROUP]
 
 DATA = LOAD hdfs_path USING PigStorage(separation_symbol) AS
 (
