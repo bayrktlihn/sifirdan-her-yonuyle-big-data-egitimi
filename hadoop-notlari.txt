@@ -1,5 +1,6 @@
 hdfs dfs -mkdir /example
 hdfs dfs -copyFromLocal your_pc_path hdfs_path
+hdfs dfs -copyToLocal hdfs_path your_pc_path
 hdfs dfs -count hdfs_path
 hdfs dfs -cat hdfs_path
 hdfs dfs -cp hdfs_copy_path hdfs_new_path
