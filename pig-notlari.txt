@@ -2,7 +2,8 @@ type_names = [int, long, float, double, chararray, byarray, boolean, Tuple, Bag,
 arithmetic_operators = [+, -, *, /, %, ?:]
 comparison_operators = [==, !=, <, >, <=, >=, matches]
 logical_operators = [or, and, not]
-null_operators = [is null, is not null] 
+null_operators = [is null, is not null]
+functions = [DUMP, DISTINCT, LOAD, FILTER]
 
 DATA = LOAD hdfs_path USING PigStorage(separation_symbol) AS
 (
