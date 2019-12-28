@@ -3,7 +3,8 @@ arithmetic_operators = [+, -, *, /, %, ?:]
 comparison_operators = [==, !=, <, >, <=, >=, matches]
 logical_operators = [or, and, not]
 null_operators = [is null, is not null]
-functions = [DUMP, DISTINCT, LOAD, FILTER, GROUP, FOREACH, AVG, COUNT, MIN, MAX, SUM, JOIN, UNION]
+functions = [DUMP, DISTINCT, LOAD, FILTER, GROUP, FOREACH, JOIN, UNION]
+FOREACH_HELP_FUNCTION = [MAX, AVG, COUNT, MIN, SUM]
 JOIN_TYPES = [LEFT, RIGHT, FULL, INNER]
 
 pig pig_file_name
