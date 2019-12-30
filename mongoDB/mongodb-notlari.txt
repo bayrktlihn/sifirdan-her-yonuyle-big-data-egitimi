@@ -14,3 +14,6 @@ mongod --config mongo-config-file-path
 mongo-config-file şunu içerir
 dbpath = data-directory-path
 logpath = log-file-path
+
+
+default portu 27017
