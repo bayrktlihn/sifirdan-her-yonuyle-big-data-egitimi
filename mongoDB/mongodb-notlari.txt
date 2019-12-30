@@ -1,0 +1,16 @@
+show dbs : mevcut databaseleri gösterir
+user DB-name
+db: hangi veri tabanında olduğumuzu gösterir
+db.createCollection(collection-name) : sql'de tabloya karşılık gelir
+show collections: mevcut collectionlari gösterir
+db.collection-name.inser(json-format) : collectiona veri eklemek için kullanılır.
+db.collection-name.find() : collectiondaki kayıtları getirir
+db.collection-name.find(json-format) : collectionda json-formatdaki ozellikleri içeren verileri getirir.
+
+
+sunucuyu harekete geçirmek için
+mongod --config mongo-config-file-path
+
+mongo-config-file şunu içerir
+dbpath = data-directory-path
+logpath = log-file-path
