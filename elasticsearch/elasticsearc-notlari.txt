@@ -1,0 +1,23 @@
+NoSQL teknolojisidir.
+MongoDB'ye göre okuma hızı iyi. Bunun nedeni veri eklenirken indexin eklenmesidir.
+documentlerini json tipinde tutar.
+
+relating database- elastic search
+database - index
+table - type
+row - document
+column - fileds
+schema - mapping
+
+
+default portu 9200
+
+document eklemek veya güncellemek için: put ile localhost:9200/index-name/type-name/id içeriği json veri olacak
+document eklemek ve idyi otomatik için: post ile localhost:9200/index-name/type-name içeriği json veri olacak
+document sorgulamak için : get ile localhost:9200/index-name/type-name/id 
+document silmek için: delete ile localhost:9200/index-name/type-name/id
+document silmek için: post ile localhost:9200/index-name/type-name/_delete_by_query ile silinecek json içeriği query alanı içermeli
+document guncellemek için: post ile localhost:9200/index-name/type-name/id/_update ile güncellenecek json içeriği doc alanı içermeli
+document sorgulamak için: gel ile localhost:9200/index-name/type-name/_search?q=column-name:column-any-value
+indexdeki tüm bilgileri getirmek için: localhost:9200/_all
+
