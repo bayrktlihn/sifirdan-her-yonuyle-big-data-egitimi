@@ -1,0 +1,32 @@
+veriler hızlı geldiğinde veri işlerken sorun oluştuğunda veriler kaybetmemek için kullanılır
+zookeeper, dağıtık sunucu mimarilerinde kaynak yönetimini koordine eder.
+
+config klasöründeki server.properties dosyası soyle olacak:
+log.dirs=kafka-folder-path\kafka-log-file-path
+
+
+zooker için
+config klasörün içerisindenki zoo_sample.cfg ismini zoo.cfg olarak güncellenecek
+zoo.cfg içerisindeki dataDir alanı altdaki gibi olacak
+dataDir=zookeeper-folder-path\data 
+
+
+ilk olarak zkserver daha sonra kafka çalıştırılır.
+bunun için windowsun pathine zooker-folder-path\bin eklenmeli
+console zkserver yazılarak zookeeper başlatılır.
+Daha sonra kafka-folder-path/bin/window sa gelinir. Altdaki komut çalıştırılır.
+	kafka-server-start.bat ..\..\config\server.properties
+
+kafka topic oluşturma
+	kafta-topics.bat --create--zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic topic_name
+
+kafka topic listeleme
+	kafta-topics.bat --list --zookeeper localhost:2181
+
+producer oluşturma
+java veya kafka ile doğrudan olabilir
+kafka için:
+	cd kafka-folder-path/bin/windows/
+	kafka-console-producer.bat --broker-list localhost:9092 --topic topic_name
+	kafka-console-consumer.bat --zookeeper localhost:2181 --topic topic_name
+	
